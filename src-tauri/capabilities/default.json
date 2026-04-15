@@ -1,0 +1,14 @@
+{
+  "identifier": "default",
+  "description": "Default permissions for Omnilab",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "shell:allow-open",
+    "dialog:default",
+    "fs:default",
+    "os:default",
+    "process:default",
+    "opener:default"
+  ]
+}

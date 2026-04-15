@@ -1,0 +1,98 @@
+{
+  "name": "Omnilab",
+  "short_name": "Omnilab",
+  "description": "Sistema nativo local-first para gestión de laboratorio",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a0a0f",
+  "theme_color": "#00E5A0",
+  "primary_color": "#00E5A0",
+  "categories": ["productivity", "business", "medical"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Nueva Bitácora",
+      "short_name": "Bitácora",
+      "description": "Crear nuevo registro",
+      "url": "./?page=bitacora&action=new",
+      "icons": [{ "src": "icon-512.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Recepción",
+      "short_name": "Recepción",
+      "description": "Recibir muestras",
+      "url": "./?page=recepcion",
+      "icons": [{ "src": "icon-512.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "IA Assistant",
+      "short_name": "IA",
+      "description": "Asistente AI",
+      "url": "./?page=ai",
+      "icons": [{ "src": "icon-512.png", "sizes": "96x96" }]
+    }
+  ],
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "share_target": {
+    "action": "./",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "launch_handler": {
+    "client_mode": "auto"
+  }
+}

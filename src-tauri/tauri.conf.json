@@ -1,0 +1,81 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "OmniLab_Installer",
+  "version": "1.0.3",
+  "identifier": "com.omnilab.obsidian",
+  "build": {
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "OmniLab v1.0.3",
+        "width": 1280,
+        "height": 820,
+        "minWidth": 1024,
+        "minHeight": 700,
+        "resizable": true,
+        "fullscreen": false,
+        "center": true,
+        "decorations": true,
+        "transparent": false,
+        "shadow": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "createUpdaterArtifacts": false,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "publisher": "OmniLab Forge",
+    "copyright": "Copyright © 2026 OmniLab Forge. Todos los derechos reservados.",
+    "category": "Science",
+    "shortDescription": "Gestión inteligente de laboratorio con IA local",
+    "longDescription": "OmniLab es una aplicación de escritorio local-first para la gestión de datos críticos en laboratorios de investigación. Procesa documentos mediante IA local adaptativa (ECO/BALANCED/PRO) sin depender de la nube.",
+    "homepage": "https://omnilab.pro",
+    "resources": [],
+    "externalBin": [],
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser",
+        "languages": ["es-ES", "en-US"],
+        "displayLanguageSelector": true
+      },
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": "",
+      "tsp": false
+    },
+    "linux": {
+      "deb": {
+        "depends": []
+      },
+      "rpm": {
+        "epoch": 0
+      },
+      "appimage": {
+        "bundleMediaFramework": false
+      }
+    },
+    "macOS": {
+      "frameworks": [],
+      "minimumSystemVersion": "",
+      "signingIdentity": null,
+      "entitlements": null
+    }
+  }
+}

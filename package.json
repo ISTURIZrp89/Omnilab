@@ -1,0 +1,42 @@
+{
+  "name": "omnilab",
+  "private": true,
+  "version": "1.0.3",
+  "description": "OmniLab — Sistema Nativo Local-First para Gestión de Laboratorio con IA Adaptativa",
+  "author": "OmniLab Forge",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build",
+    "tauri:build:installer": "tauri build --bundles nsis",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-dialog": "^2",
+    "@tauri-apps/plugin-fs": "^2",
+    "@tauri-apps/plugin-os": "^2",
+    "@tauri-apps/plugin-shell": "^2",
+    "dexie": "^3.2.4",
+    "dexie-react-hooks": "^1.1.7",
+    "framer-motion": "^10.16.16",
+    "jspdf": "^2.5.1",
+    "lucide-react": "^0.294.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.10.3",
+    "uuid": "^9.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "@vitejs/plugin-react": "^4.2.1",
+    "terser": "^5.46.1",
+    "vite": "^5.0.10"
+  }
+}
