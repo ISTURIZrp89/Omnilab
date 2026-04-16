@@ -75,12 +75,16 @@ pub async fn show_open_dialog(
     }
     
     let files = if multiple {
-        dialog.blocking_pick_files()
+        dialog.pick_files().await
+            .map(|f| f.into_iter().map(|p| p.to_string()).collect())
+            .unwrap_or_default()
     } else {
-        dialog.blocking_pick_files()
+        dialog.pick_file().await
+            .map(|f| vec![f.to_string()])
+            .unwrap_or_default()
     };
     
-    Ok(files.map(|f| f.iter().map(|p| p.to_string()).collect()).unwrap_or_default())
+    Ok(files)
 }
 
 #[command]
